@@ -5,7 +5,7 @@ document.getElementById('qrForm').addEventListener('submit', async function(even
     const color = document.getElementById('color').value;
     const format = document.getElementById('format').value;
 
-    const response = await fetch('/generate_qr', {
+    const response = await fetch('/api/generate_qr', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
